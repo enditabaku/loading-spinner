@@ -1,0 +1,63 @@
+<style>
+    body{
+  background: #000;
+}
+.container2 {
+    position: fixed;
+    left: 50% ;
+    top: 50% ;
+    transform: translate(-50%, -50%);
+    background: #f1f1f1;
+    width: 28%;
+    padding: 0% 0% 2% 0%;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    z-index:2000;
+}
+.loader {
+    width: 200px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8% 0% 4% 30%;
+}
+
+@keyframes load01 {
+    50% {
+        transform: rotateZ(90deg);
+        border-style: solid;
+        border-color: #750d41;
+        border-radius: 30% 30%;
+        opacity: .7;
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+         border-radius: 50% 50%;
+    }
+}
+
+.loader01::before {
+    content: "";
+    color: #ed0c7d;
+    height:60px;
+    width: 60px;  
+    border: 6px solid #000 #000 #000 #000;
+    border-radius:50% 50%;
+    border-style: dotted;
+    animation: load01 1s infinite;
+}
+
+
+@media only screen and (max-width:762px) {
+    .container2{
+        width: 99%;
+    }
+}
+</style>
+
+
+<div class="container2">
+  <div class="loader loader01"></div>
+</div>
