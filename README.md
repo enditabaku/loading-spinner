@@ -1,4 +1,4 @@
-# Loading Spinners
+# Loading Spinner
 =======
 ## Screenshots
 1. Minimalist Pink Spinner:
